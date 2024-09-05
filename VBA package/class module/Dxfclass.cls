@@ -84,6 +84,20 @@ Sub dxfText(X_pos As Double, Y_pos As Double, str_size As Double, width_scale As
             Print #1, str
         Close #1
 End Sub
+Sub dxfPoint(x As Double,y As Double)
+    Open save_path For Append As #1
+        Print #1, "0"
+        Print #1, "POINT"
+        Print #1, "8"
+        Print #1, "_0-1_"
+        Print #1, "62"
+        Print #1, "7"
+        Print #1, "10"
+        Print #1, x
+        Print #1, "20"
+        Print #1, y
+    Close #1
+End Sub
 Sub dxfArc(radius As Double, Pos_X As Double, Pos_Y As Double, Deg_start As Double, Deg_end As Double)
     Open save_path For Append As #1
         Print #1, "0"
