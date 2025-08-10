@@ -11,14 +11,16 @@ Option Explicit
 Public path As String
 
 Public save_path As String
+
 Function DegtoRad()
     DegtoRad = pi / 180
 End Function
+
 Function RadtoDeg()
     RadtoDeg = 180 / pi
 End Function
 
-Function pi()
+Function pi()' 円周率はVBAにないので逆三角関数から計算
     pi = Atn(1) * 4
 End Function
 
@@ -29,7 +31,7 @@ Function getSaveAspath_2()
         getSaveAspath_2 "a"
     End If
 End Function
-Function Init_dxfclass() '��������֐�
+Function Init_dxfclass() '��������֐�
     path = DesktopFilepath
     ChDir path
     save_path = Application.GetSaveAsFilename("output", filefilter:="DXFdata(*.dxf;),", Title:="submit generate dxf file")
