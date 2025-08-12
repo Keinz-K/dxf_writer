@@ -29,7 +29,7 @@ Function getSaveAspath_2()
         getSaveAspath_2 "a"
     End If
 End Function
-Function Init_dxfclass() '‰Šú‘ã“üŠÖ”
+Function Init_dxfclass() 'åˆæœŸä»£å…¥é–¢æ•°
     path = DesktopFilepath
     ChDir path
     save_path = Application.GetSaveAsFilename("output", filefilter:="DXFdata(*.dxf;),", Title:="submit generate dxf file")
@@ -3207,7 +3207,7 @@ Sub header()
         Print #1, "70"
         Print #1, "64"
         Print #1, "3"
-        Print #1, "?_?~?["
+        Print #1, "?_?â€¾?["
         Print #1, "72"
         Print #1, "65"
         Print #1, "73"
@@ -4125,5 +4125,5 @@ Sub header()
     Close #1
 End Sub
 Function DesktopFilepath() As String
-    DesktopFilepath = "C:\Users\" & Environ("Username") & "\Desktop\"
+    DesktopFilepath = "C:Â¥UsersÂ¥" & Environ("Username") & "Â¥DesktopÂ¥"
 End Function

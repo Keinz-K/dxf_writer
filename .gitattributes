@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ensure correct line endings and encoding for VBA files
+*.bas eol=crlf working-tree-encoding=Shift_JIS
+*.cls eol=crlf working-tree-encoding=Shift_JIS
+*.frm eol=crlf working-tree-encoding=Shift_JIS

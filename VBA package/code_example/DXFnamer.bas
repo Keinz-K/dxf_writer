@@ -9,11 +9,11 @@ Sub main()
     Dim getline As String
     Dim txtline() As String
     Dim dxf As New Dxfclass
-    originpath = dxf.getOriginpath() 'レイヤ名の無いファイルを選択する�
+    originpath = dxf.getOriginpath() 'レイヤ名の無いファイルを選択する?
     
     If (originpath = "") Then Exit Sub
     
-    generatepath = dxf.getSaveAspath() 'ファイルの保存先を指定する�
+    generatepath = dxf.getSaveAspath() 'ファイルの保存先を指定する?
     
     If (generatepath = originpath) Then Exit Sub
     
