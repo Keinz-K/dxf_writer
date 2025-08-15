@@ -12,7 +12,7 @@ Sub main()
     For j = 1 To 10
         n = j
         deg = 360 / n
-        fpath = dxf.DesktopFilepath & "take1¥" & j & ".dxf"
+        fpath = dxf.DesktopFilepath & "take1\" & j & ".dxf"
         
         dxf.header (fpath)
         

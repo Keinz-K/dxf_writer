@@ -2,6 +2,6 @@
 * text=auto
 
 # Ensure correct line endings and encoding for VBA files
-*.bas eol=crlf working-tree-encoding=Shift_JIS
-*.cls eol=crlf working-tree-encoding=Shift_JIS
-*.frm eol=crlf working-tree-encoding=Shift_JIS
+*.bas eol=crlf working-tree-encoding=CP932
+*.cls eol=crlf working-tree-encoding=CP932
+*.frm eol=crlf working-tree-encoding=CP932
