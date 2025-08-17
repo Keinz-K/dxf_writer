@@ -419,7 +419,7 @@ Sub header()
         Print #1, "70"
         Print #1, "64"
         Print #1, "3"
-        Print #1, "?_?‾?["
+        Print #1, "?_?~?["
         Print #1, "72"
         Print #1, "65"
         Print #1, "73"
@@ -1337,5 +1337,5 @@ Sub header()
     Close #1
 End Sub
 Function DesktopFilepath() As String
-    DesktopFilepath = "C:¥Users¥" & Environ("Username") & "¥Desktop¥"
+    DesktopFilepath = "C:\Users\" & Environ("Username") & "\Desktop\"
 End Function
